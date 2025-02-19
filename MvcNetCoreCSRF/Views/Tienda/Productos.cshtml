@@ -1,6 +1,8 @@
 ﻿<h1>Listado de Productos</h1>
 
 <form method="post">
+    @* ESTO GENERA LA COOKIE Y UNA CAJA DE TEXTO CON UN VALOR ALEATORIO *@
+    @Html.AntiForgeryToken()
     <label>Dirección de envio</label>
     <input type="text" name="direccion" class="form-control" />
     <button class="btn btn-info"> Realizar pedido</button>

@@ -1,5 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
+//  HABILITAR ANTIFORGERY EN NUESTRA APLICACION
+builder.Services.AddAntiforgery();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 //  AÑADIMOS SESSION Y LA CACHE
